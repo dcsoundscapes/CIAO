@@ -44,12 +44,20 @@
 
 				</div>
 
+				</nav>
+
+				<%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+  			<%= form.label :q, 'Search for:', :style => "color: black;" %>
+ 			 	<%= form.text_field :q, id: 'q', value: params[:q], :class => "text_field" %>
+  			<%= form.submit 'Search', :class => "button" %>
+			<% end %>
+
 
 		
 
 
 	  		
-			</nav>
+		
 
 
     <%= yield %>

@@ -26,21 +26,27 @@
 						</div>
 					</div>
 				<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-								<li>
-									<a href="/static_pages/index">Home</a>
-								</li>
-								<li>
-									<a href="/static_pages/about">About</a>
-								</li>
-								<li>
-									<a href="/static_pages/contact">Contact</a>
-								</li>
-								<li>
-									<a href="/products/">Products</a>
-								</li>
-
-						</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="/static_pages/index">Home</a>
+						</li>
+						<li>
+							<a href="/static_pages/about">About</a>
+						</li>
+						<li>
+							<a href="/static_pages/contact">Contact</a>
+						</li>
+						<li>
+							<a href="/products/">Products</a>
+						</li>
+						<li>
+  						<% if user_signed_in? %>
+   						 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  						<% else %>
+    					 <%= link_to('Login', new_user_session_path) %>
+  						<% end %>
+  					</li>
+					</ul>
 
 				</div>
 
@@ -51,6 +57,9 @@
  			 	<%= form.text_field :q, id: 'q', value: params[:q], :class => "text_field" %>
   			<%= form.submit 'Search', :class => "button" %>
 			<% end %>
+
+			<p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
 
 		

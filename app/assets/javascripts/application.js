@@ -14,3 +14,6 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+
+$(".alert" ).fadeOut(3000);

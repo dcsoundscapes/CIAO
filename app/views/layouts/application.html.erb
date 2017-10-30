@@ -47,32 +47,36 @@
   						<% end %>
   					</li>
 					</ul>
-
 				</div>
+			</nav>
 
-				</nav>
+		<%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+  	<%= form.label :q, 'Search for:', :style => "color: black;" %>
+ 		<%= form.text_field :q, id: 'q', value: params[:q], :class => "text_field" %>
+  	<%= form.submit 'Search', :class => "button" %>
+	<% end %>
 
-				<%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  			<%= form.label :q, 'Search for:', :style => "color: black;" %>
- 			 	<%= form.text_field :q, id: 'q', value: params[:q], :class => "text_field" %>
-  			<%= form.submit 'Search', :class => "button" %>
-			<% end %>
-
-			<p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
-
-		
-
-
-	  		
-		
-
-
-    <%= yield %>
-
-
-    <footer>
+    <div class="container-fluid">
+    	<% if notice %>
+      	<div class="alert alert-success" role="alert">
+       	 <p class="notice"><%= notice %></p>
+       	 <script>
+    				setTimeout("$('.notice').fadeOut('slow')", 5000)
+  			 </script>
+      	</div>
+    <% end %>
+    	<% if alert %>
+    	  <div class="alert alert-warning" role="alert">
+      	  <p class="alert"><%= alert %></p>
+     	 </div>
+     		 <script>
+    				setTimeout("$('.alert').fadeOut('slow')", 5000)
+  			 </script>
+    <% end %>
+    	<%= yield %>
+  	</div> <!-- end container -->
+ 
+		<footer>
   		<div class=copy>
 				&copy; Bike Berlin 2017
 			</div>

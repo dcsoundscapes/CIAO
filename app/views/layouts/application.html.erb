@@ -60,10 +60,11 @@
     	<% if notice %>
       	<div class="alert alert-success" role="alert">
        	 <p class="notice"><%= notice %></p>
+       	</div>
        	 <script>
     				setTimeout("$('.notice').fadeOut('slow')", 5000)
   			 </script>
-      	</div>
+      	
     <% end %>
     	<% if alert %>
     	  <div class="alert alert-warning" role="alert">

@@ -16,7 +16,4 @@
 //= require_tree .
 
 
-$({
-  $(".notice").fadeOut(5000);
-});
 

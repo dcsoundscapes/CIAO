@@ -61,17 +61,11 @@
       	<div class="alert alert-success" role="alert">
        	 <p class="notice"><%= notice %></p>
        	</div>
-       	 <script>
-    				setTimeout("$('.notice').fadeOut('slow')", 5000)
-  			 </script>
       <% end %>
     	<% if alert %>
     	  <div class="alert alert-warning" role="alert">
       	  <p class="alert"><%= alert %></p>
      	 </div>
-     		 <script>
-    				setTimeout("$('.alert').fadeOut('slow')", 5000)
-  			 </script>
     <% end %>
     	<%= yield %>
   	</div> <!-- end container -->

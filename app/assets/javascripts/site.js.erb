@@ -4,6 +4,7 @@ $(document).on('turbolinks:load', function(){
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
     readOnly: true,
+    size: 12,
     score: function() {
       return $(this).attr('data-score');
     }

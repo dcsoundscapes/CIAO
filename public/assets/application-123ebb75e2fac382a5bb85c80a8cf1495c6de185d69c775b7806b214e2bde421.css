@@ -1,0 +1,372 @@
+/* line 4, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination {
+  font-size: 12px;
+}
+
+/* line 8, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination > * {
+  margin-right: 0.1em;
+  padding: 0.3em 0.4em;
+}
+
+/* line 13, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination a:hover {
+  background: #202020 none repeat scroll 0 0;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+/* line 18, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination a:active {
+  text-shadow: none;
+}
+
+/* line 22, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination .current {
+  background: #202020 none repeat scroll 0 0;
+  color: white;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+/* line 28, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/comments.scss */
+.pagination .disabled {
+  color: #C0C0C0;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 6, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/products.scss */
+.pagination .previous_page {
+  background: #7777ff;
+  color: white;
+}
+/* line 7, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/products.scss */
+.pagination .previous_page.disabled {
+  background: white;
+  color: #777;
+}
+/* line 8, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/products.scss */
+.pagination .current {
+  background: yellow;
+}
+/* line 9, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/products.scss */
+.pagination .next_page {
+  background: #7777ff;
+  color: white;
+}
+/* line 10, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/products.scss */
+.pagination .next_page.disabled {
+  background: white;
+  color: #777;
+}
+/* line 1, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+body {
+  padding-top: 100px;
+}
+
+/* line 7, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: arial;
+  color: black;
+  margin-left: 0px;
+}
+
+/* line 13, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a {
+  color: yellow;
+  margin: -14px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* line 21, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  padding-right: 20px;
+}
+
+/* line 26, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar-header {
+  padding-top: 0px;
+}
+
+/* line 33, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+ul {
+  text-transform: uppercase;
+  top: 0px;
+}
+
+/* line 40, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0px 10px 0px;
+}
+
+/* line 49, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar ul {
+  float: right;
+  top: 0px;
+}
+
+/* line 54, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  margin-left: -35px;
+}
+
+/* line 63, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.copy {
+  color: yellow;
+}
+
+/* line 68, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.row {
+  border: 10px;
+}
+
+/* line 75, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  height: 500px;
+}
+
+/* line 81, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+img {
+  margin: auto;
+  width: auto;
+}
+
+/* line 90, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  color: black;
+}
+
+/* line 94, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.button {
+  position: relative;
+  margin-top: -20px;
+  padding: 3px 15px;
+  left: -8px;
+  border: 2px solid black;
+  background-color: FE512E;
+  color: #fafafa;
+}
+
+/* line 103, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* line 108, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.text_field {
+  padding: 3px 15px;
+  background: white;
+  border: 2px solid black;
+}
+
+/* line 114, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.navbar-nav a {
+  font-size: 20px;
+  color: yellow;
+}
+
+/* line 119, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+form {
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+/* line 127, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.btn-sm {
+  color: yellow;
+}
+
+/* line 131, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination {
+  font-size: 12px;
+}
+
+/* line 135, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination > * {
+  margin-right: 0.1em;
+  padding: 0.3em 0.4em;
+}
+
+/* line 140, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination a:hover {
+  background: #202020 none repeat scroll 0 0;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+/* line 145, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination a:active {
+  text-shadow: none;
+}
+
+/* line 149, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination .current {
+  background: #202020 none repeat scroll 0 0;
+  color: white;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+/* line 155, /Users/dcsoundscapes1/CIAO/app/assets/stylesheets/static_pages.scss */
+.pagination .disabled {
+  color: #C0C0C0;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

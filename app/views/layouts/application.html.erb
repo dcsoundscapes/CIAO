@@ -28,16 +28,16 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="/static_pages/index">Home</a>
+							<%= link_to('Home', static_pages_landing_page_path) %>
 						</li>
 						<li>
-							<a href="/static_pages/about">About</a>
+							<%= link_to('About', static_pages_about_path) %>
 						</li>
 						<li>
-							<a href="/static_pages/contact">Contact</a>
+							<%= link_to('Contact', static_pages_contact_path) %>
 						</li>
 						<li>
-							<a href="/products/">Products</a>
+							<%= link_to('Products', products_path) %>
 						</li>
 						<li>
   						<% if user_signed_in? %>
@@ -66,6 +66,9 @@
     	  <div class="alert alert-warning" role="alert">
       	  <p class="alert"><%= alert %></p>
      	 </div>
+     		 <script>
+    				setTimeout("$('.alert').fadeOut(5000)")
+  			 </script>
     <% end %>
     	<%= yield %>
   	</div> <!-- end container -->

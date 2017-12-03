@@ -37,6 +37,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
@@ -56,6 +57,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails-controller-testing'
+
 
 gem 'devise'
 

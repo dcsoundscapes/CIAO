@@ -1,10 +1,12 @@
 <div class="container">
   <div class="show"> 
+
+
     <p id="notice"><%= notice %></p>
     <div class="row">
     <div class="col-sm-9 col-md-9">
     <p>
-      <%= image_tag(@product.image_url, class: "img-responsive") %>
+       <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
     </p>
     </div>
     <div class="col-sm-3 col-md-3">

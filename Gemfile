@@ -64,6 +64,8 @@ gem 'brakeman', :require => false
 
 gem 'devise'
 
+gem 'dalli'
+
 gem 'will_paginate'
 
 gem 'cancancan', '~> 1.10'

@@ -9,6 +9,7 @@
        <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
     </p>
     </div>
+    <% cache @product do %>
     <div class="col-sm-3 col-md-3">
     <p>
       <strong>Name:</strong>
@@ -30,6 +31,7 @@
       <%= @product.price %>
     </p>
     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    <% end %>
 
     <%= form_with(url: '/payments/create') do |form| %>
       <%= hidden_field_tag(:product_id, @product.id) %> 

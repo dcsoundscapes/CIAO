@@ -66,6 +66,8 @@ gem 'devise'
 
 gem 'dalli'
 
+gem 'redis-rails'
+
 gem 'will_paginate'
 
 gem 'cancancan', '~> 1.10'

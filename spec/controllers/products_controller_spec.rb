@@ -19,14 +19,14 @@ describe ProductsController, type: :controller do
 
   context 'POST #create' do
     it 'is an invalid product' do
-    @product = FactoryGirl.build(:product, name: "")
+    @product = FactoryBot.build(:product, name: "")
     expect(@product).not_to be_valid
     end
   end
 
   context 'GET #show' do
     it 'renders the show page' do
-      product = FactoryGirl.create(:product)
+      product = FactoryBot.create(:product)
       get :show, id: product.id
       expect(response).to be_ok
       expect(response).to render_template('show')
@@ -35,12 +35,12 @@ describe ProductsController, type: :controller do
 
   context "DELETE #destroy" do
     before do
-      @user = FactoryGirl.build(:admin)
+      @user = FactoryBot.build(:admin)
       sign_in @user
     end
 
     it "should allow admin to delete product" do
-      product = FactoryGirl.create(:product)
+      product = FactoryBot.create(:product)
       delete :destroy, id: product.id
       expect(response).to redirect_to products_path
     end
@@ -48,8 +48,8 @@ describe ProductsController, type: :controller do
 
   context "put #update" do
     before do
-      @product = FactoryGirl.create(:product)
-      @user = FactoryGirl.build(:user)
+      @product = FactoryBot.create(:product)
+      @user = FactoryBot.build(:user)
       sign_in @user
     end
     it "successfully updates a product" do

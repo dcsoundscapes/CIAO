@@ -5,7 +5,7 @@ describe Comment do
   context "not given full information" do
 
     it "is not valid without a rating" do
-      @comment = FactoryGirl.build(:comment, rating: nil)
+      @comment = FactoryBot.build(:comment, rating: nil)
       expect(@comment).not_to be_valid
     end
 

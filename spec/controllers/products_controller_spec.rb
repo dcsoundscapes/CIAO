@@ -27,7 +27,7 @@ describe ProductsController, type: :controller do
   context 'GET #show' do
     it 'renders the show page' do
       product = FactoryBot.create(:product)
-      get :show, id: product.id
+      get :show, params: { id: product.id }
       expect(response).to be_ok
       expect(response).to render_template('show')
     end
@@ -41,7 +41,7 @@ describe ProductsController, type: :controller do
 
     it "should allow admin to delete product" do
       product = FactoryBot.create(:product)
-      delete :destroy, id: product.id
+      delete :destroy, params: { id: product.id }
       expect(response).to redirect_to products_path
     end
   end
